@@ -1,0 +1,87 @@
+.left-button {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  border-radius: 50%;
+  padding: 15px;
+  border-color: black;
+  cursor: pointer;
+  user-select: none;
+}
+
+.right-button {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  cursor: pointer;
+  border-color: black;
+  padding: 15px;
+  border-radius: 50%;
+  user-select: none;
+}
+
+.slider {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 1000px;
+  height: 600px;
+}
+
+.notes {
+  width: 1000px;
+}
+
+@media screen and (max-width: 480px) {
+  .image {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .left-button {
+    position: absolute;
+    top: 40%;
+    left: 22px;
+    padding: 10px;
+  }
+
+  .right-button {
+    position: absolute;
+    top: 40%;
+    right: 22px;
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .image {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .left-button {
+    position: absolute;
+    top: 38%;
+    left: 22px;
+    padding: 10px;
+  }
+
+  .right-button {
+    position: absolute;
+    top: 38%;
+    right: 22px;
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .image {
+    width: 100%;
+    object-fit: cover;
+  }
+}

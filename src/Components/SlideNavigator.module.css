@@ -1,0 +1,47 @@
+.dots {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+  border-color: black;
+}
+
+.dots:hover {
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.slider {
+  position: absolute;
+  bottom: 165px;
+  left: 44%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+  .slider {
+    position: absolute;
+    left: 32%;
+    bottom: 230px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .slider {
+    position: absolute;
+    left: 36%;
+    bottom: 215px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .slider {
+    position: absolute;
+    bottom: 210px;
+    left: 43%;
+  }
+}
